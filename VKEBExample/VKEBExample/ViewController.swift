@@ -23,8 +23,8 @@ class ViewController: UIViewController
         
         // Add manually VKExpandableButton with text content via code
         // Direction: RIGHT (from left to right)
-        self.buttonRight = VKExpandableButton(frame: CGRectMake(16, 28, 80, 44))
-        self.buttonRight.direction      = .Right
+        self.buttonRight = VKExpandableButton(frame: CGRect(x: 16, y: 28, width: 80, height: 44))
+        self.buttonRight.direction      = .right
         self.buttonRight.options        = ["Auto", "On", "Off"]
         self.buttonRight.currentValue   = self.buttonRight.options[0]
         self.buttonRight.cornerRadius   = self.buttonRight.frame.size.height / 2
@@ -38,7 +38,7 @@ class ViewController: UIViewController
         
         // Customized VKExpandableButton with UIImage content
         // Direction: LEFT (from right to left)
-        self.buttonLeft.direction      = .Left
+        self.buttonLeft.direction      = .left
         self.buttonLeft.options        = [UIImage(named: "icon1")!, UIImage(named: "icon2")!, UIImage(named: "icon3")!]
         self.buttonLeft.currentValue   = self.buttonLeft.options[2]
         self.buttonLeft.cornerRadius   = self.buttonLeft.frame.size.height / 2
@@ -56,7 +56,7 @@ class ViewController: UIViewController
         
         // VKExpandableButton with text content
         // Direction: DOWN (from top to bottom)
-        self.buttonDown.direction      = .Down
+        self.buttonDown.direction      = .down
         self.buttonDown.options        = ["Auto", "On", "Off"]
         self.buttonDown.currentValue   = self.buttonRight.options[1]
         
@@ -67,7 +67,7 @@ class ViewController: UIViewController
         
         // VKExpandableButton with mixed content
         // Direction: UP (from bottom to top)
-        self.buttonUp.direction      = .Up
+        self.buttonUp.direction      = .up
         self.buttonUp.options        = ["Dog", UIImage(named: "icon2")!, "Mouse"]
         self.buttonUp.currentValue   = self.buttonUp.options[0]
         self.buttonUp.optionSelectionBlock = {
