@@ -2,7 +2,9 @@
 ## Description
 **VKExpandableButton** is a simple and easy-to-use expandable button written in Swift. You can put any `String` or `UIImage` inside it's content and customize it as you wish.<br>
 
+<p align="center">
 ![VKExpandableButton Demo](https://github.com/vladislav-k/VKExpandableButton/blob/master/Demo.gif?raw=true)
+</p>
 
 ## Installation
 For now you can install **VKExpandableButton** manually only. 
