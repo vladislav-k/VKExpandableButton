@@ -23,7 +23,7 @@ class ViewController: UIViewController
         
         // Add manually VKExpandableButton with text content via code
         // Direction: RIGHT (from left to right)
-        self.buttonRight = VKExpandableButton(frame: CGRectMake(16, 28, 80, 44))
+        self.buttonRight = VKExpandableButton(frame: CGRect(x: 16, y: 28, width: 80, height: 44))
         self.buttonRight.direction      = .Right
         self.buttonRight.options        = ["Auto", "On", "Off"]
         self.buttonRight.currentValue   = self.buttonRight.options[0]
