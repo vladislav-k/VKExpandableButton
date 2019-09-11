@@ -42,7 +42,7 @@ class ViewController: UIViewController
         self.buttonLeft.options        = [UIImage(named: "icon1")!, UIImage(named: "icon2")!, UIImage(named: "icon3")!]
         self.buttonLeft.currentValue   = self.buttonLeft.options[2]
         self.buttonLeft.cornerRadius   = self.buttonLeft.frame.size.height / 2
-        self.buttonLeft.imageInsets    = UIEdgeInsetsMake(12, 12, 12, 12)
+        self.buttonLeft.imageInsets    = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         self.buttonLeft.selectionColor = UIColor(red: 75.0/256.0, green: 178.0/256.0, blue: 174.0/256.0, alpha: 1.0)
         self.buttonLeft.buttonBackgroundColor = UIColor(red: 44.0/256.0, green: 62.0/256.0, blue: 80.0/256.0, alpha: 1.0)
         self.buttonLeft.expandedButtonBackgroundColor = self.buttonLeft.buttonBackgroundColor

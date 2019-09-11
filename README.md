@@ -20,17 +20,18 @@ To test it, clone the repo and run it from the Example directory.
 ## Usage
 ### Directions
 **VKExpandableButton** supports four different directions:
-<br>* Top
-<br>* Right
-<br>* Bottom
-<br>* Left
+<br>• Top
+<br>• Right
+<br>• Bottom
+<br>• Left
 
 ### Example 
 As mentioned before **VKExpandableButton** is easy to use. Here is a quick code example:
+
 ```swift
 // Add manually VKExpandableButton with text content via code
 // Direction: RIGHT (from left to right)
-self.buttonRight = VKExpandableButton(frame: CGRectMake(16, 28, 80, 44))
+self.buttonRight                = VKExpandableButton(frame: CGRectMake(16, 28, 80, 44))
 self.buttonRight.direction      = .Right
 self.buttonRight.options        = ["Auto", "On", "Off"]
 self.buttonRight.currentValue   = self.buttonRight.options[0]

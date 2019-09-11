@@ -56,7 +56,7 @@ class VKExpandableButton: UIView
     var animationDuration: TimeInterval = 0.275
     private var minOptionSize: CGFloat = 60
     
-    var imageInsets: UIEdgeInsets = UIEdgeInsetsMake(6, 6, 6, 6)
+    var imageInsets: UIEdgeInsets = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
     {
         didSet {
             self.button.imageEdgeInsets = imageInsets
@@ -196,7 +196,7 @@ extension VKExpandableButton
             // Configure button with String option
             else if option is String
             {
-                let textLength = (option as! NSString).size(withAttributes: [NSAttributedStringKey.font : self.textFont]).width
+                let textLength = (option as! NSString).size(withAttributes: [NSAttributedString.Key.font : self.textFont]).width
                 
                 if textLength > self.minOptionSize && textLength > self.button.bounds.size.width
                 {
